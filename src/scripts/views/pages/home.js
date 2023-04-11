@@ -4,7 +4,12 @@ import { createRestaurantsTemplate } from '../templates/template-creator';
 const Home = {
   async render() {
     return `
-        <div class="hero" tabindex="0" aria-label="">
+        <div tabindex="0" aria-label="">
+        <picture tabindex="0">
+        <source class="lazyload" type="image/webp" srcset="./images/heros/hero-image_2.webp">
+        <img class="hero lazyload" src="./images/heros/hero-image_2-large.jpg" width=100% 
+             alt="kingdom heart 3 poster">
+       </picture>
         </div>
         <section class="content">
           <div class="explore">
